@@ -1,0 +1,70 @@
+(hearth_assessment) hannahportes@Hannahs-MacBook-Pro-7 hearth % python3 main.py 
+Loaded all variables successfully
+Enter the email address of the person you would like me to locate on Twitter: jacob.portes@mosaicml.com
+If you would like, enter the name of the person you would like me to locate on Twitter, otherwise hit enter: jacob portes
+Searching for Twitter user corresponding to:  jacob.portes@mosaicml.com
+Found Twitter account: JacobianNeuro
+Loaded all variables successfully
+Getting user information...
+Extracting and sorting tweets to find most popular...
+{'Full Name': 'Jacob Portes',
+ 'Least Popular Tweet': {'bottom_likes': 0,
+                         'retweets': 0,
+                         'text': 'This is awesome! https://t.co/MKQPrdbaaS'},
+ 'Most Popular Tweet': {'likes': 0,
+                        'retweets': 4089,
+                        'text': 'RT @The_Gilp: When your post doc finally ends '
+                                'https://t.co/LZfD11nPNz'},
+ 'Number of Followers': 391,
+ 'Number of Tweets': 186,
+ 'Number of Users Following': 861,
+ 'Tweets Mentioning User': ['@NaveenGRao @jefrankle @srchvrs @JacobianNeuro '
+                            '100 pages. No idea really though.',
+                            '@code_star @jefrankle @srchvrs @JacobianNeuro How '
+                            'many words in your dissertation? BTW, I so wish I '
+                            'had this when writing my dissertation...',
+                            '@NaveenGRao @jefrankle @srchvrs @JacobianNeuro '
+                            'That’s a hell of a BERT. Maybe it can embed my '
+                            'dissertation.',
+                            '@jefrankle @code_star @srchvrs @JacobianNeuro '
+                            'what about 96k?',
+                            '@jefrankle @JacobianNeuro I’ll see what I can do '
+                            '😉',
+                            '@ncooper57 CC: @JacobianNeuro',
+                            "@code_star @srchvrs @JacobianNeuro I'll only get "
+                            'excited for 65k.',
+                            '@srchvrs @jefrankle @JacobianNeuro 2k is in '
+                            'flight ☺️. Look for it next week.',
+                            '@jefrankle @code_star @JacobianNeuro 1024 is a '
+                            'great start for sure. It will likely to '
+                            'generalize to something like 2K very well and '
+                            'this is enough for a lot of applications.',
+                            '@code_star @JacobianNeuro Hey @code_star - It '
+                            'would be really cool if the sequence length were '
+                            '65k instead of a measly 512 or 1024.',
+                            'So, we thought this was a great point. Longer '
+                            'context lengths are great. The original MosiacML '
+                            'BERT recipe called for a seq len of 128 with '
+                            'ALiBi, but my excellent colleague @JacobianNeuro '
+                            'cooked up some extra special longer seq len '
+                            'models and put them on HF for your enjoyment! '
+                            'https://t.co/x4x855ah7h',
+                            '@srchvrs @huggingface @MosaicML @JacobianNeuro '
+                            '(we also have a 2048-length one finishing soon!)',
+                            '@srchvrs @huggingface @MosaicML @JacobianNeuro '
+                            'https://t.co/CUTWOSUn2b',
+                            '@srchvrs @huggingface @MosaicML @JacobianNeuro We '
+                            "didn't run them through any extensive tests to "
+                            'verify what they are capable of now, but it was a '
+                            'simple one-line change on the yaml for us so we '
+                            'thought YOLO. We would love feedback on how they '
+                            'perform and if they are helpful!',
+                            '@srchvrs @huggingface @MosaicML Hey @srchvrs we '
+                            'ugh talked about it over the weekend and decided '
+                            'to give you a gift. Thanks to @JacobianNeuro  we '
+                            'have longer seq length BERTs than our original '
+                            'training recipe *also* trained with ALiBi .\n'
+                            'https://t.co/CUTWOSUn2b\n'
+                            '\n'
+                            'https://t.co/MWLBcysOUU'],
+ 'Username': 'JacobianNeuro'}
