@@ -1,70 +1,95 @@
-(hearth_assessment) hannahportes@Hannahs-MacBook-Pro-7 hearth % python3 main.py 
+(hearth_assessment) hannahportes@Hannahs-MacBook-Pro-7 hearth % python3 main.py
 Loaded all variables successfully
-Enter the email address of the person you would like me to locate on Twitter: jacob.portes@mosaicml.com
-If you would like, enter the name of the person you would like me to locate on Twitter, otherwise hit enter: jacob portes
-Searching for Twitter user corresponding to:  jacob.portes@mosaicml.com
-Found Twitter account: JacobianNeuro
+Enter the email address of the person you would like me to locate on Twitter: ashe@hearth.ai
+If you would like, enter the name of the person you would like me to locate on Twitter, otherwise hit enter: ashe magalhaes
+Searching for Twitter user corresponding to:  ashe@hearth.ai
+Found Twitter account: ashe_cs
 Loaded all variables successfully
 Getting user information...
-Extracting and sorting tweets to find most popular...
-{'Full Name': 'Jacob Portes',
+{'Full Name': 'ashe',
  'Least Popular Tweet': {'bottom_likes': 0,
                          'retweets': 0,
-                         'text': 'This is awesome! https://t.co/MKQPrdbaaS'},
- 'Most Popular Tweet': {'likes': 0,
-                        'retweets': 4089,
-                        'text': 'RT @The_Gilp: When your post doc finally ends '
-                                'https://t.co/LZfD11nPNz'},
- 'Number of Followers': 391,
- 'Number of Tweets': 186,
- 'Number of Users Following': 861,
- 'Tweets Mentioning User': ['@NaveenGRao @jefrankle @srchvrs @JacobianNeuro '
-                            '100 pages. No idea really though.',
-                            '@code_star @jefrankle @srchvrs @JacobianNeuro How '
-                            'many words in your dissertation? BTW, I so wish I '
-                            'had this when writing my dissertation...',
-                            '@NaveenGRao @jefrankle @srchvrs @JacobianNeuro '
-                            'That’s a hell of a BERT. Maybe it can embed my '
-                            'dissertation.',
-                            '@jefrankle @code_star @srchvrs @JacobianNeuro '
-                            'what about 96k?',
-                            '@jefrankle @JacobianNeuro I’ll see what I can do '
-                            '😉',
-                            '@ncooper57 CC: @JacobianNeuro',
-                            "@code_star @srchvrs @JacobianNeuro I'll only get "
-                            'excited for 65k.',
-                            '@srchvrs @jefrankle @JacobianNeuro 2k is in '
-                            'flight ☺️. Look for it next week.',
-                            '@jefrankle @code_star @JacobianNeuro 1024 is a '
-                            'great start for sure. It will likely to '
-                            'generalize to something like 2K very well and '
-                            'this is enough for a lot of applications.',
-                            '@code_star @JacobianNeuro Hey @code_star - It '
-                            'would be really cool if the sequence length were '
-                            '65k instead of a measly 512 or 1024.',
-                            'So, we thought this was a great point. Longer '
-                            'context lengths are great. The original MosiacML '
-                            'BERT recipe called for a seq len of 128 with '
-                            'ALiBi, but my excellent colleague @JacobianNeuro '
-                            'cooked up some extra special longer seq len '
-                            'models and put them on HF for your enjoyment! '
-                            'https://t.co/x4x855ah7h',
-                            '@srchvrs @huggingface @MosaicML @JacobianNeuro '
-                            '(we also have a 2048-length one finishing soon!)',
-                            '@srchvrs @huggingface @MosaicML @JacobianNeuro '
-                            'https://t.co/CUTWOSUn2b',
-                            '@srchvrs @huggingface @MosaicML @JacobianNeuro We '
-                            "didn't run them through any extensive tests to "
-                            'verify what they are capable of now, but it was a '
-                            'simple one-line change on the yaml for us so we '
-                            'thought YOLO. We would love feedback on how they '
-                            'perform and if they are helpful!',
-                            '@srchvrs @huggingface @MosaicML Hey @srchvrs we '
-                            'ugh talked about it over the weekend and decided '
-                            'to give you a gift. Thanks to @JacobianNeuro  we '
-                            'have longer seq length BERTs than our original '
-                            'training recipe *also* trained with ALiBi .\n'
-                            'https://t.co/CUTWOSUn2b\n'
+                         'text': '@alexrkonrad pls share the divine new york '
+                                 'sandwiches'},
+ 'Most Popular Tweet': {'likes': 279,
+                        'retweets': 28,
+                        'text': 'some vectorstore analysis - what do folks '
+                                'like when building for production? '
+                                'https://t.co/NndjPlfGD7'},
+ 'Number of Followers': 2206,
+ 'Number of Tweets': 753,
+ 'Number of Users Following': 666,
+ 'Tweets Mentioning User': ['We had a full house last night for our chat on '
+                            'the state of AI in NYC! Thanks to @gideonmann '
+                            '@ashe_cs @maddiehawkinson @greco_ciro for sharing '
+                            'their insights, and our cohosts at New York AI. '
+                            'Sign up for our newsletter &amp; get the scoop on '
+                            'upcoming events: https://t.co/niTxn3JOgx '
+                            'https://t.co/O6tUskCMbo',
+                            '@ashe_cs “We are what we repeatedly do. '
+                            'Excellence, then, is not an act, but a habit.”',
+                            '@ashe_cs “Through sheer will and fate, our '
+                            'desires and destinies correlate”',
+                            '✅FREE MINT\n'
                             '\n'
-                            'https://t.co/MWLBcysOUU'],
- 'Username': 'JacobianNeuro'}
+                            '@blvck_artist_,@memonic_johnny,@calkilucaroni,@ashe_cs,@StephenCaggiano,@illsun,@katebphotos,@CryptoSpia_it\n'
+                            '\n'
+                            '✅ For WL JOIN https://t.co/zeNeRcT0vz',
+                            '@ashe_cs @maddiehawkinson 🔥🔥🔥',
+                            '@ashe_cs @isamlambert @LasseRegin +1, that’s my '
+                            'only concern to use planetscale.',
+                            "We're hosting what looks to be an awesome State "
+                            'of AI event tonight with @gideonmann '
+                            '@maddiehawkinson @ashe_cs and others. Join us! '
+                            'https://t.co/06jvlTSSCo',
+                            '@LasseRegin @ashe_cs Replication, automation, '
+                            'connection management etc are all really strong '
+                            'in MySQL. We leverage those things to make '
+                            'PlanetScale what it is.',
+                            '@isamlambert @ashe_cs Could you elaborate? '
+                            "Struggling to understand what's the limitations",
+                            '@ashe_cs Unfortunately we support a lot of these '
+                            "really cool things because we don't support "
+                            'Postgres.',
+                            '@pontamojya\n'
+                            '@NotScotman\n'
+                            '@sunizekai\n'
+                            '@AZELXBT\n'
+                            '@eliottgdl\n'
+                            '@Jamatechster\n'
+                            '@VireterArt\n'
+                            '@hidden17\n'
+                            '@brainmatics\n'
+                            '@RemyDekor\n'
+                            '@_DickDickenson_\n'
+                            '@jamiec666\n'
+                            '@PeaceOfMind37\n'
+                            '@MrmagicEth\n'
+                            '@Irish_stevo80\n'
+                            '@Metternich6666\n'
+                            '@SatoriCryptos\n'
+                            '@ashe_cs\n'
+                            '@srsole',
+                            'Kubeflow 🧊\U0001fab7 \n'
+                            'tf 📐🚣\n'
+                            ' setup 🚶🏻\u200d♂️🔂\n'
+                            '\n'
+                            'https://t.co/d1iYTSwCyI\n'
+                            '\n'
+                            '@ashe_cs',
+                            '@ashe_cs @pinecone @vercel @Replit @nextjs '
+                            '@FastAPI @supabase @trychroma @OpenAI '
+                            '@replicatehq @huggingface @LangChainAI @FixieAI '
+                            '@babyAGI_ it is the most extended vector db among '
+                            'early adopters of LLMs, but others are going very '
+                            'strong after them!',
+                            '@ashe_cs @ompemi @vercel @Replit @nextjs @FastAPI '
+                            '@supabase @trychroma @OpenAI @replicatehq '
+                            '@huggingface @LangChainAI @FixieAI @babyAGI_ '
+                            'Thousands of companies use Pinecone in '
+                            'production. We published a guide to managing '
+                            'costs: https://t.co/CLQjFtRf0x',
+                            '@maddiehawkinson @ashe_cs @LangChainAI @hwchase17 '
+                            '@bernhardsson @NicolaeRusan @karinanguyen_ I '
+                            "don't think so! An invite would be 👌"],
+ 'Username': 'ashe_cs'}
