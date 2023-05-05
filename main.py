@@ -8,7 +8,9 @@ import pprint
 
 
 def prompt_user():
-    # function controlling the prompts for the user to enter 
+    """
+    Function controlling the prompts for the user to enter 
+    """
     email = input("Enter the email address of the person you would like me to locate on Twitter: ")
     if not email:
         print("A user email is required, please enter a user email.")
@@ -20,7 +22,13 @@ def prompt_user():
     return query, email
         
 def main():
-    # main function to run all code
+    """
+    The main function constructs a query containing the email, name, and specifying the site as
+    site:twitter.com to see if there is a twitter account that. 
+    
+    If there is no account found the program ends, if an account is found, the program then gets 
+    the user id, username, and name registered to the account by querying the Twitter API in Twitter.py
+    """
     logging.basicConfig(filename='twitter.log', level=logging.ERROR)
     # set environment variables
     dotenv_path = Path('./.env')
@@ -29,7 +37,7 @@ def main():
     cx = os.getenv('CX')
     
     if googleapi_key and cx:
-                print('Loaded all variables successfully')
+        print('Loaded all variables successfully')
     else:  
         if not googleapi_key:
             print('Error loading GOOGLEAPIKEY')

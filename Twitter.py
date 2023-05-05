@@ -9,7 +9,12 @@ import pprint
 class Twitter:
     
     def __init__(self, username):
-        # .env file to set envirionment variables for twitter api
+        """
+        .env file to set envirionment variables for twitter api
+        
+        args
+            username: string, twitter username
+        """
         dotenv_path = Path('./.env')
         load_dotenv(dotenv_path=dotenv_path)
         api_key = os.getenv('APIKEY')
@@ -44,13 +49,16 @@ class Twitter:
         self.username = str(username)
 
     def get_user_info(self):
+        """
+        Get user information (username, name, id) from the username found in main.py
+        sample response json 
+            {'data': 
+              {'id': '12345678', 
+              'name': 'Hannah Portes', 
+              'username': 'mangosmom'}
+            }
+        """
         print('Getting user information...')
-        # sample response json 
-            # {'data': 
-            #   {'id': '12345678', 
-            #   'name': 'Hannah Portes', 
-            #   'username': 'mangosmom'}
-            # }
         client = self.client
         response = client.get_user(username=self.username)
         if response.status_code == 200:    
@@ -66,11 +74,17 @@ class Twitter:
             print('Error calling Twitter API')
             return None
         
-    def get_sorted_tweets(self, twitter_id):
-        # function to get the top and bottom tweets
-        print('Extracting and sorting tweets to find most popular...')
+    def get_sorted_tweets(self, twitter_id, max_results=100):
+        """
+        This function gets 100 tweets and sorts them by likes and retweet count to
+        find the top and bottom tweets
+        
+        args
+            twitter_id: int, integer corresponding to a single twitter user
+            max_results: int, maximum number of results returned by the API
+        """
         client = self.client
-        tweets = client.get_users_tweets(twitter_id, tweet_fields=["public_metrics"], max_results=100, expansions=["author_id"])
+        tweets = client.get_users_tweets(twitter_id, tweet_fields=["public_metrics"], max_results=max_results, expansions=["author_id"])
         tweets = tweets.json()['data']
         # sort tweets by popularity of retweet count + like count
         tweets.sort(key=lambda t: t['public_metrics']["retweet_count"] + t['public_metrics']["like_count"], reverse=True)
@@ -85,14 +99,21 @@ class Twitter:
         bottom_likes = tweets[-1]['public_metrics']['like_count']
         return [(top_id, top_text, top_retweets, top_likes), (bottom_id, bottom_text, bottom_retweets, bottom_likes)]
     
-    def get_mentions(self):
-        # get mentions of a user
+    def get_mentions(self, max_results=15):
+        """
+        Get mentions of a user
+        
+        args
+            max_results: int, max results returned by the API
+        """
         client = self.client
-        response = client.get_users_mentions(self.user_id, max_results=15).json()
+        response = client.get_users_mentions(self.user_id, max_results=max_results).json()
         return response['data']
     
     def get_user_stats(self, id):
-        # get the user statistics
+        """
+        Get the user statistics
+        """
         client = self.client
         response = client.get_user(id=id, user_fields='public_metrics').json()['data']['public_metrics']
         followers = response['followers_count']
@@ -101,7 +122,9 @@ class Twitter:
         return followers, following, tweet_count
             
     def return_all_info(self):
-        # this function aggregates all the data collected by the above calls to the api
+        """ 
+        This function aggregates all the data collected by the above calls to the API
+        """
         twitter_id, twitter_name, twitter_username = self.get_user_info()
         followers, following, tweet_count = self.get_user_stats(twitter_id)
         self.json['Full Name'] = twitter_name
